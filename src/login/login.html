@@ -123,17 +123,17 @@
 
   <script>
     document.getElementById('loginForm').addEventListener('submit', function(event) {
-      event.preventDefault(); // Prevent form submission
+      event.preventDefault(); 
 
       const username = document.getElementById('username').value;
       const password = document.getElementById('password').value;
 
-      // Demo login credentials
+      
       const demoUsername = "admin";
       const demoPassword = "password";
 
       if (username === demoUsername && password === demoPassword) {
-        // Redirect to another page (e.g., dashboard.html)
+        
         window.location.href = "dashboard/dashboard.html";
       } else {
         alert("Invalid username or password. Please try again.");
